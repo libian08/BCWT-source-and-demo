@@ -10,5 +10,5 @@ Encode:        Mode: 0, inputFile, outputFile, 0(lossy)/1(lossless), qMin(0-7), 
 DecodeImage:   Mode: 1, inputFile, outputFile, outputformat(png/jpg)
 
 Example:
-Encode:        2dBCWTnew 0 exampleImage.png outputTTC.ttc 0 0 6
+Encode:        2dBCWTnew 0 exampleImage.png outputTTC.ttc 1 0 6
 DecodeImage:   2dBCWTnew 1 outputTTC.ttc fullDecImage  png
