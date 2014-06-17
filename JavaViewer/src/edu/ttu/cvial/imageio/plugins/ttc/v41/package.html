@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head></head>
+<body bgcolor="white">
+<p>
+Provides classes for encoding/decoding images in TTC 4.1 format.
+<p>
+Key new features in TTC 4.1 over 4.0 include:
+<ul>
+<li>Region-Of-Interest (ROI) decoding <br>
+This is an experimental feature. Currently, decoding a ROI requires roughly
+half of the time compared with decoding a full image. In future version, this
+feature will be improved.</li>
+<li>Reversible mode <br>
+Lossless coding can be achieved by using reversible mode together with quality-index set to 0. When encoding is done in reversible mode, decoding is automatically done in reversible mode. Another benifit of reversible mode is that coding speed is 10-30% faster and memory usage is 40% lower compared with irreversible mode. <br>
+However, reversible mode has its drawbacks. For the same bitrate/compression-ratio, reversible mode usually results in lower PSNR (about 1dB) than in irreversible mode. Therefore, users should choose between reversible and irreversible mode carefully.
+</ul>
+</p>
+</body>
+</html>

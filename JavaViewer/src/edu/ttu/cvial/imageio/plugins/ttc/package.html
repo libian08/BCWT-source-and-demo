@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head></head>
+<body bgcolor="white">
+<p>Provides abstract classes serving as unified interfaces for all versions of 
+TTC codecs. Each version of TTC codec derives the classes in this package and 
+implements some or all of their methods.</p>
+<p>For a specific version of TTC codec, if certain methods are not supported, 
+calls to those methods will be ignored with a warning record in the log.</p>
+<p>The code snippet below shows a typical example of reading a TTC image using
+classes in this package.</p>
+<p><code>
+ // Get an appropriate TTCImageReader. <br>
+ Iterator imageReaders = ImageIO.getImageReaders(inputStream); <br>
+ TTCImageReader reader = (TTCImageReader) imageReaders.next(); <br>
+ <br>
+ // Set the input. <br>
+ reader.setInput(inputStream); <br>
+ <br>
+ // Get a default set of parameters. <br>
+ TTCImageReadParam ttcParam = (TTCImageReadParam) reader.getDefaultReadParam(); <br>
+ <br>
+ // Customize the parameters. <br>
+ ttcParam.setSourceRegion(sourceROI); <br>
+ <br>
+ // Read the image with customized parameters. <br>
+ BufferedImage image = reader.read(0, ttcParam); <br>
+ </code></p>
+</body>
+</html>
