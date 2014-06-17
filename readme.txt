@@ -7,7 +7,7 @@ BCWT lossless demo usage
 
 Running parameter settings(in Linux):
 Encode:        Mode: 0, inputFile, outputFile, 0(lossy)/1(lossless), qMin(0-7), dwtLevel(2- 6)  
-DecodeImage:   Mode: 1, inputFile, outputFile, outputformat(png/jpg
+DecodeImage:   Mode: 1, inputFile, outputFile, outputformat(png/jpg)
 
 Example:
 Encode:        2dBCWTnew 0 exampleImage.png outputTTC.ttc 0 0 6
